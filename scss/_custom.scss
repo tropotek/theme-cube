@@ -1,0 +1,48 @@
+/*
+ *
+ */
+
+// Header
+.fixed-header #header-navbar {
+  max-height: 50px;
+}
+
+
+// ActionPanel
+.tk-ui-action-panel {
+  .btn {
+    margin-right: 10px;
+  }
+}
+
+
+
+
+// Content
+
+// Panel conversion to main-box
+//
+//.panel {
+//  @extend .main-box;
+//  .panel-heading {
+//    @extend .main-box-header;
+//    //@extend .clearfix;
+//    .panel-title {
+//      //@extend .float-left;
+//    }
+//  }
+//  .panel-body {
+//    @extend .main-box-body;
+//  }
+//  .panel-footer {
+//    //@extend .main-box-footer;
+//  }
+//
+//}
+
+
+
+
+
+
+

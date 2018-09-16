@@ -1,0 +1,58 @@
+
+
+// Form
+.tk-form {
+
+  .nav-tabs {
+    > li.nav-item.has-error {
+      > a.active,
+      > a.active:hover,
+      > a.active:focus {
+        border-top: 2px solid $red-color-dark;
+      }
+    }
+  }
+
+  .tk-check-select {
+    .status-notes {
+      margin-top: -2px;
+      z-index: 999;
+    }
+  }
+  .form-control::placeholder {
+    color: $gray-color-light;
+  }
+  .input-group-prepend.input-group-append {
+    margin-right: -2px;
+    margin-left: 0;
+  }
+  .input-group-text {
+    background: #e7ebee;
+  }
+}
+
+.input-group-prepend,
+.input-group-append  {
+  .input-group-text {
+    border-width: 1px;
+  }
+  .btn {
+    border-width: 0 !important;
+  }
+}
+
+
+form.tk-form .form-group label {
+  text-align: left;
+}
+
+.CodeMirror {
+  border: 2px solid #EFEFEF;
+}
+
+
+
+
+
+
+
