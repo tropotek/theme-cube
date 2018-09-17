@@ -11,13 +11,17 @@
   .tk-recover-url,
   .tk-login-url {
     text-align: right;
-    display: block;
+    display: inline-block;
     margin: 15px 0px 0px 0px;
     float:right;
   }
+
+  .tk-unstitutions-url,
   .tk-register-url {
+    margin: 15px 0px 0px 0px;
     float:left;
   }
+
 }
 
 
@@ -53,3 +57,16 @@
     color: #FFF;
   }
 }
+
+
+
+.tk-admin-nav {
+   position: absolute;
+   bottom: 5px;
+   right: 10px;
+   a, a:link {
+     color: $primary-color;
+   }
+ }
+
+

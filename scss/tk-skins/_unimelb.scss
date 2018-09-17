@@ -29,6 +29,30 @@ $whblSidebarLinkColor: #484848;
 		color: #c4e9ff;
 	}
 
+	.nav-footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		padding: 10px;
+		background: $primary-color;
+		z-index: -999;
+
+		opacity: 0.1;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+		&:hover {
+			opacity: 1;
+			transition: opacity .25s ease-in-out;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+		}
+	}
+	.nav-tabs > li.nav-item > a:hover {
+		border-bottom: 1px solid #FFF;
+	}
+
 	#nav-col,
 	#page-wrapper {
 		background-color: $whblNavColBg;

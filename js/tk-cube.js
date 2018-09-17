@@ -1,5 +1,6 @@
 
-// for th etk-panel generator to keep bootstrap 3/4 compatability 
+
+// for the tk-panel generator to keep bootstrap 3/4 compatability
 config.tkPanel = {
   template:
   '<div class="main-box">\n' +
@@ -9,7 +10,6 @@ config.tkPanel = {
 };
 
 $(function($) {
-
 
   // ------------------   dropdown menu     -----------------------------------
   $('.tk-ui-menu.nav-dropdown').each(function () {
@@ -50,7 +50,6 @@ $(function($) {
   if (!$('#sidebar-nav a.active').length) {
     $($('.breadcrumb a').get().reverse()).each(function () {
       var linkHref = $(this).attr('href').split("?")[0];
-      console.log(linkHref);
       var a = $('#sidebar-nav a[href="' + linkHref + '"]');
       if (a.length) {
         activateItem(a);
@@ -62,6 +61,9 @@ $(function($) {
 
 
 
+
+
+  
 	setTimeout(function() {
 		$('#content-wrapper > .row').css({
 			opacity: 1

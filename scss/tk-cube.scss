@@ -9,6 +9,7 @@
 @import "theme/theme_styles";   // Cube SCSS
 
 // Tk Lib Styles
+@import $cube-skin;
 @import "../../../vendor/ttek/tk-form/js/fileinput/tkFileInput";
 @import "../../../vendor/ttek/tk-base/assets/js/bootstrap-datetimepicker/less/datetimepicker";
 @import "../../../vendor/ttek/tk-base/assets/scss/bootstrap4/growlLike";
