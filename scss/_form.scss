@@ -50,8 +50,12 @@ form.tk-form .form-group label {
   border: 2px solid #EFEFEF;
 }
 
-
-
+.ui-autocomplete-loading {
+  background: white url($loading-icon) right center no-repeat;
+}
+.ui-autocomplete {
+  z-index: 100;
+}
 
 
 
