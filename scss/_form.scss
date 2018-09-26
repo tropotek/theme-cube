@@ -13,6 +13,19 @@
     }
   }
 
+  .form-control-plaintext {
+    display: block;
+    width: 100%;
+    padding: 0.375rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 0.85rem;
+    color: #212529;
+    background-color: $gray-100;
+    border: 2px solid #e7ebee;
+    //cursor: not-allowed;
+  }
+
   .tk-check-select {
     .status-notes {
       margin-top: -2px;
