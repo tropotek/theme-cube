@@ -165,15 +165,15 @@ body.theme-tropotek {
 	.main-box {
 		border: 1px solid $main-bg-color;
 	}
-	a:not(.btn),
+	a:not(.btn, .list-group-item-action),
 	.fc-state-default,
 	.jvectormap-zoomin,
 	.jvectormap-zoomout,
 	#user-profile .profile-details ul > li > span {
 		color: $primary-color;
 	}
-	a:not(.btn):hover,
-	a:not(.btn):focus,
+	a:not(.btn, .list-group-item-action):hover,
+	a:not(.btn, .list-group-item-action):focus,
 	.widget-users li > .details > .name > a:hover,
 	.widget-todo .actions > a:hover {
 		color: $primary-color;
