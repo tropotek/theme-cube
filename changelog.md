@@ -1,5 +1,10 @@
 #CHANGELOG#
 
+Ver 1.0.4 [2018-10-03]:
+-------------------------------
+  - Updated the skills settings pages
+
+
 Ver 1.0.2 [2018-09-25]:
 -------------------------------
   - Added mentor auto login for LDAP
