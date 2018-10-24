@@ -9,6 +9,7 @@ config.tkPanel = {
   '</div>'
 };
 
+
 $(function($) {
 
   // ------------------   dropdown menu     -----------------------------------
@@ -27,31 +28,41 @@ $(function($) {
 
   $('.tk-ui-menu').css('visibility', 'visible');
 
+
+
   // Activate the appropriate side nav for this url, expands any sub-nav items
   function activateItem(a) {
-    if (!a) return;
-    a.addClass('active');
-    var parent = a.closest('ul');
-    do {
-      parent.closest('li').addClass('active');
-      parent = parent.closest('li').closest('ul');
-    } while (parent && parent.hasClass('submenu'));
+    var $item = a.parent();
+		if (!$item.hasClass('open')) {
+			$item.parent().find('.open .submenu').slideUp('fast');
+			$item.parent().find('.open').toggleClass('open');
+		}
+		$item.toggleClass('open');
+		if ($item.hasClass('open')) {
+			$item.children('.submenu').slideDown('fast');
+		} else {
+			$item.children('.submenu').slideUp('fast');
+		}
   }
+
+
   // First check the page URL for a match
-  $('#nav-col a').removeClass('active').each(function () {
+  $('#sidebar-nav a').each(function () {
     var uri = location.href.split("?")[0];
     var href = $(this).attr('href').split("?")[0];
-
     if (uri === href) {
-      activateItem($(this));
+      activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
     }
   });
+
   // Check breadcrumbs if no menu item active
-  if (!$('#sidebar-nav a.active').length) {
+  if (!$('#sidebar-nav li.open').length) {
     $($('.breadcrumb a').get().reverse()).each(function () {
       var linkHref = $(this).attr('href').split("?")[0];
       var a = $('#sidebar-nav a[href="' + linkHref + '"]');
       if (a.length) {
+      console.log(linkHref);
+      console.log(a);
         activateItem(a);
         return false;
       }
@@ -61,35 +72,17 @@ $(function($) {
 
 
 
-
-
-  
 	setTimeout(function() {
 		$('#content-wrapper > .row').css({
 			opacity: 1
 		});
 	}, 200);
-	
-	$('#sidebar-nav,#nav-col-submenu').on('click', '.dropdown-toggle', function (e) {
-		e.preventDefault();
-		
-		var $item = $(this).parent();
 
-		if (!$item.hasClass('open')) {
-			$item.parent().find('.open .submenu').slideUp('fast');
-			$item.parent().find('.open').toggleClass('open');
-		}
-		
-		$item.toggleClass('open');
-		
-		if ($item.hasClass('open')) {
-			$item.children('.submenu').slideDown('fast');
-		} 
-		else {
-			$item.children('.submenu').slideUp('fast');
-		}
+	$('#sidebar-nav, #nav-col-submenu').on('click', '.dropdown-toggle', function (e) {
+		e.preventDefault();
+		activateItem($(this));
 	});
-	
+
 	$('body').on('mouseenter', '#page-wrapper.nav-small #sidebar-nav .dropdown-toggle', function (e) {
 		if ($( document ).width() >= 992) {
 			var $item = $(this).parent();
@@ -174,6 +167,12 @@ $(function($) {
 		});
 	});
 });
+
+
+
+
+
+
 
 $.fn.removeClassPrefix = function(prefix) {
     this.each(function(i, el) {
