@@ -61,8 +61,6 @@ $(function($) {
       var linkHref = $(this).attr('href').split("?")[0];
       var a = $('#sidebar-nav a[href="' + linkHref + '"]');
       if (a.length) {
-      console.log(linkHref);
-      console.log(a);
         activateItem(a);
         return false;
       }
