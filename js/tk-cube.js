@@ -47,12 +47,12 @@ $(function($) {
 
 
   // First check the page URL for a match
-  $('#sidebar-nav a').each(function () {
-    var uri = location.href.split("?")[0];
+  $('#sidebar-nav a:not(.dropdown-toggle)').each(function () {
+    var url = location.href.split("?")[0];
     var href = $(this).attr('href').split("?")[0];
-    if (uri === href) {
-      activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
-    }
+    if (url === href)
+      if($(this).closest('ul').is('.submenu'))
+        activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
   });
 
   // Check breadcrumbs if no menu item active
@@ -61,6 +61,7 @@ $(function($) {
       var linkHref = $(this).attr('href').split("?")[0];
       var a = $('#sidebar-nav a[href="' + linkHref + '"]');
       if (a.length) {
+        //console.log(a);
         activateItem(a);
         return false;
       }
