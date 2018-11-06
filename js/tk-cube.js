@@ -61,8 +61,7 @@ $(function($) {
       var linkHref = $(this).attr('href').split("?")[0];
       var a = $('#sidebar-nav a[href="' + linkHref + '"]');
       if (a.length) {
-        //console.log(a);
-        activateItem(a);
+        activateItem(a.parent().parent().parent().find('.dropdown-toggle'));
         return false;
       }
     });
