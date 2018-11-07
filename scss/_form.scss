@@ -42,6 +42,21 @@
   .input-group-text {
     background: #e7ebee;
   }
+
+  /* fix list alignment for the checkbox select form element */
+  .tk-checkboxselect {
+    li {
+      label {
+        display: block;
+        span, input {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+
+
 }
 
 .input-group-prepend,
