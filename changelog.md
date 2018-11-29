@@ -1,5 +1,9 @@
 #CHANGELOG#
 
+Ver 1.0.10 [2018-11-30]:
+-------------------------------
+
+
 Ver 1.0.8 [2018-11-08]:
 -------------------------------
   - Merge branch 'master' of https://github.com/tropotek/theme-cube
