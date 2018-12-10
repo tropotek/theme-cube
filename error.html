@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title></title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="/html/theme-cube/components/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- RTL support - for demo only -->
+  <!--<script src="/html/theme-cube/js/demo-rtl.js"></script>-->
+  <!--
+  If you need RTL support just include here RTL CSS file <link rel="stylesheet" type="text/css" href="css/libs/bootstrap-rtl.min.css" />
+  And add "rtl" class to <body> element - e.g. <body class="rtl">
+  -->
+
+  <!-- libraries -->
+  <link rel="stylesheet" type="text/css" href="/html/theme-cube/components/font-awesome/css/font-awesome.css" />
+
+  <!-- global styles -->
+  <link rel="stylesheet" type="text/css" href="/html/theme-cube/css/theme_styles.css" />
+
+  <!-- this page specific styles -->
+
+  <!-- google font libraries -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css' />
+
+  <!--[if lt IE 9]>
+  <script src="/html/theme-cube/js/html5shiv.js"></script>
+  <script src="/html/theme-cube/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body id="error-page">
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12">
+      <div id="error-box">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <div id="error-box-inner"><img src="/html/theme-cube/img/error-500-v1.png" alt="Error 500"/></div>
+            <h1>ERROR 500</h1>
+            <p>Something went very wrong. We are sorry for that.</p>
+            <p>Go back to <a href="/">homepage</a>.</p>
+          </div>
+        </div>
+
+        <div class="row clearfix" choice="debug" style="width: 90%; margin: 0 auto;background-color: #EFEFEF;padding: 10px;">
+          <div class="col-md-12" style="text-align: left;">
+            <h1 var="class"></h1>
+            <p class="message"><strong var="message"></strong></p>
+            <p>&nbsp;</p>
+            <pre class="trace" var="trace" choice="trace"></pre>
+            <p>&nbsp;</p>
+            <div class="log-dump" var="log" choice="log"></div>
+            <p><a class="btn btn-light" href="javascript: window.history.back();"><i class="fa fa-arrow-left"></i> Back</a> <a class="btn btn-light" href="/logout.html"><i class="fa fa-sign-out"></i> Logout</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- global scripts -->
+<script src="/html/theme-cube/components/jquery/dist/jquery.min.js"></script>
+<script src="/html/theme-cube/components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/html/theme-cube/components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+
+<!-- this page specific scripts -->
+
+
+<!-- theme scripts -->
+<script src="/html/theme-cube/js/scripts.js"></script>
+
+<!-- this page specific inline scripts -->
+
+</body>
+</html>
