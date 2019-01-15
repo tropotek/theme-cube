@@ -1,5 +1,11 @@
 #CHANGELOG#
 
+Ver 1.0.16 [2019-01-16]:
+-------------------------------
+  - In the project Edit and View add the "Add Member" dialog as there is no functionality there a
+   the moment
+
+
 Ver 1.0.14 [2019-01-01]:
 -------------------------------
   - Added maintenance mode to site settings
