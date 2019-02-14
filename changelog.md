@@ -1,5 +1,9 @@
 #CHANGELOG#
 
+Ver 1.0.18 [2019-02-15]:
+-------------------------------
+
+
 Ver 1.0.16 [2019-01-16]:
 -------------------------------
   - In the project Edit and View add the "Add Member" dialog as there is no functionality there a
