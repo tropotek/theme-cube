@@ -56,7 +56,16 @@
   }
 
 
-
+  .form-control.checkbox-select {
+    padding-top: 0.2rem;
+    .btn {
+      color: #999;
+      margin: 0;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
 }
 
 .input-group-prepend,
