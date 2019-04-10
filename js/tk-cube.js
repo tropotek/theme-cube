@@ -4,7 +4,7 @@
 config.tkPanel = {
   template:
   '<div class="main-box">\n' +
-  '  <header class="main-box-header clearfix"><h2 class="float-left"><i class="tp-icon"></i> <span class="tp-title"></span></h2></header>\n' +
+  '  <header class="main-box-header clearfix"><h2 class=""><i class="tp-icon"></i> <span class="tp-title"></span></h2></header>\n' +
   '  <div class="tp-body main-box-body clearfix"></div>\n' +
   '</div>'
 };
