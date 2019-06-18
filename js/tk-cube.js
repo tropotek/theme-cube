@@ -31,6 +31,10 @@ $(function($) {
 
 
   // Activate the appropriate side nav for this url, expands any sub-nav items
+	var subItems = $('.submenu a');
+
+
+
   function activateItem(a) {
     var $item = a.parent();
 		if (!$item.hasClass('open')) {
@@ -46,26 +50,48 @@ $(function($) {
   }
 
 
-  // First check the page URL for a match
-  $('#sidebar-nav a:not(.dropdown-toggle)').each(function () {
-    var url = location.href.split("?")[0];
-    var href = $(this).attr('href').split("?")[0];
-    if (url === href)
-      if($(this).closest('ul').is('.submenu'))
-        activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
-  });
+	// First check the page URL for a match
+	subItems.each(function () {
+		var url = location.href.split("?")[0];
+		var href = $(this).attr('href').split("?")[0];
+		if (url === href)
+				activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
+	});
 
-  // Check breadcrumbs if no menu item active
-  if (!$('#sidebar-nav li.open').length) {
-    $($('.breadcrumb a').get().reverse()).each(function () {
-      var linkHref = $(this).attr('href').split("?")[0];
-      var a = $('#sidebar-nav a[href="' + linkHref + '"]');
-      if (a.length) {
-        activateItem(a.parent().parent().parent().find('.dropdown-toggle'));
-        return false;
-      }
-    });
-  }
+	// Check breadcrumbs if no menu item active
+	if (!$('#sidebar-nav li.open').length) {
+		$($('.breadcrumb a').get().reverse()).each(function () {
+			var linkHref = $(this).attr('href').split("?")[0];
+			var a = subItems.find('[href="' + linkHref + '"]');
+			if (a.length) {
+				activateItem(a.parent().parent().parent().find('.dropdown-toggle'));
+				return false;
+			}
+		});
+	}
+
+
+	// // First check the page URL for a match
+	// $('#sidebar-nav a:not(.dropdown-toggle)').each(function () {
+	// 	var url = location.href.split("?")[0];
+	// 	var href = $(this).attr('href').split("?")[0];
+	// 	if (url === href)
+	// 		if($(this).closest('ul').is('.submenu'))
+	// 			activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
+	// 	//activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
+	// });
+	//
+	// // Check breadcrumbs if no menu item active
+	// if (!$('#sidebar-nav li.open').length) {
+	// 	$($('.breadcrumb a').get().reverse()).each(function () {
+	// 		var linkHref = $(this).attr('href').split("?")[0];
+	// 		var a = $('#sidebar-nav a[href="' + linkHref + '"]');
+	// 		if (a.length) {
+	// 			activateItem(a.parent().parent().parent().find('.dropdown-toggle'));
+	// 			return false;
+	// 		}
+	// 	});
+	// }
   // ------------------   end  -----------------------------------
 
 
