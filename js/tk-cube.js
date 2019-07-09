@@ -31,9 +31,6 @@ $(function($) {
 
 
   // Activate the appropriate side nav for this url, expands any sub-nav items
-	var subItems = $('.submenu a');
-
-
 
   function activateItem(a) {
     var $item = a.parent();
@@ -49,6 +46,7 @@ $(function($) {
 		}
   }
 
+	var subItems = $('.submenu a');
 
 	// First check the page URL for a match
 	subItems.each(function () {
