@@ -58,13 +58,18 @@ $(function($) {
 
 	// Check breadcrumbs if no menu item active
 	if (!$('#sidebar-nav li.open').length) {
+
 		$($('.breadcrumb a').get().reverse()).each(function () {
 			var linkHref = $(this).attr('href').split("?")[0];
-			var a = subItems.find('[href="' + linkHref + '"]');
-			if (a.length) {
-				activateItem(a.parent().parent().parent().find('.dropdown-toggle'));
-				return false;
-			}
+			var found = false;
+			$(subItems).each(function () {
+				if (linkHref === $(this).attr('href')) {
+					found = true;
+					activateItem($(this).parent().parent().parent().find('.dropdown-toggle'));
+					return false;
+				}
+			});
+			if (found) return false;
 		});
 	}
 
