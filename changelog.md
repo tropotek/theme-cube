@@ -1,5 +1,10 @@
 #CHANGELOG#
 
+Ver 1.0.36 [2019-08-21]:
+-------------------------------
+  - Added upload area to filemanager [dropzone]
+
+
 Ver 1.0.34 [2019-07-15]:
 -------------------------------
   - Added sessions and session types
