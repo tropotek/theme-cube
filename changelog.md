@@ -1,5 +1,10 @@
 #CHANGELOG#
 
+Ver 1.0.38 [2019-09-24]:
+-------------------------------
+  - Updated dialogs and fixed Minutes cell
+
+
 Ver 1.0.36 [2019-08-21]:
 -------------------------------
   - Added upload area to filemanager [dropzone]
