@@ -1,5 +1,10 @@
 #CHANGELOG#
 
+Ver 1.0.40 [2019-12-04]:
+-------------------------------
+  - Startted adding all DB models
+
+
 Ver 1.0.38 [2019-09-24]:
 -------------------------------
   - Updated dialogs and fixed Minutes cell
