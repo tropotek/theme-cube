@@ -5,14 +5,28 @@
 .nav-tabs > li.nav-item > a:hover {
   border-bottom: 1px solid #FFF;
 }
+#sidebar-nav {
+  .nav-header {
+    a {
+      color: #a6a6a6;
+      &:link {
+        color: #a6a6a6;
+      }
+      &:hover {
+        color: #969696;
+      }
+    }
+  }
 
-#sidebar-nav ul.nav.navbar-nav {
-  margin-bottom: 70px;
-}
-#sidebar-nav .nav li .submenu {
-  padding: 0 0 5px 0;
-  > li > a {
-    padding-left: 35px;
+  ul.nav.navbar-nav {
+    margin-bottom: 70px;
+  }
+
+  .nav li .submenu {
+    padding: 0 0 5px 0;
+    > li > a {
+      padding-left: 35px;
+    }
   }
 }
 

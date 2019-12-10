@@ -20,7 +20,7 @@ $(function($) {
 
   // Side menu
   $('.tk-ui-menu.nav-side').each(function () {
-    $(this).prepend('<li class="nav-header nav-header-first d-none d-lg-block">Navigation</li>');
+    //$(this).prepend('<li class="nav-header nav-header-first d-none d-lg-block">Navigation</li>');
     $(this).addClass('nav navbar-nav nav-pills nav-stacked').find('ul').addClass('submenu');
     $(this).find('li.submenu > a').addClass('dropdown-toggle dropdown-nocaret').append('<i class="fa fa-angle-right drop-icon"></i>');
     $(this).find('li.submenu').removeClass('submenu');
