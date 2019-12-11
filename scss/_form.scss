@@ -68,6 +68,16 @@
       background-color: transparent;
     }
   }
+
+  .form-row {
+
+    &.tk-form-events {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+
 }
 
 .input-group-prepend,
