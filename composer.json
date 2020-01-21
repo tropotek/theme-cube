@@ -6,9 +6,9 @@
         "tk",
         "tropotek"
     ],
-    "time": "2020-01-21",
+    "time": "2018-09-11",
     "license": "MIT",
-    "version": "1.0.42",
+    "version": "0.0.99",
     "authors":  [
          {
             "name": "Michael Mifsud",
@@ -19,6 +19,7 @@
     "autoload":  {
     },
     "require":  {
+
     },
     "extra":  {
         "branch-alias":  {
