@@ -198,9 +198,6 @@ $(function($) {
 
 
 
-
-
-
 $.fn.removeClassPrefix = function(prefix) {
     this.each(function(i, el) {
         var classes = el.className.split(" ").filter(function(c) {
@@ -237,3 +234,20 @@ $.fn.removeClassPrefix = function(prefix) {
 	jQuery.fn[sr] = function(fn){	return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
+
+
+
+$(document).on('click', '[data-toggle="lightbox"], .ui-lightbox', function(event) {
+	if ($(this).attr('href').match(/(^data:image\/.*,)|(\.(jp(e|g|eg)|gif|png|bmp|webp|svg)((\?|#).*)?$)/i)) {
+		event.preventDefault();
+		$(this).ekkoLightbox({
+			//alwaysShowClose: true
+			onShow: function onShow(lb) {
+				this._$element.data('disableExternalCheck', true);
+			}
+		});
+	}
+});
+
+
+
