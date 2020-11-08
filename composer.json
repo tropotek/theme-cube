@@ -8,7 +8,6 @@
     ],
     "time": "2018-09-11",
     "license": "MIT",
-    "version": "0.0.99",
     "authors":  [
          {
             "name": "Michael Mifsud",
@@ -19,7 +18,6 @@
     "autoload":  {
     },
     "require":  {
-
     },
     "extra":  {
         "branch-alias":  {
