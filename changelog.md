@@ -1,5 +1,9 @@
 #CHANGELOG#
 
+Ver 1.2.0 [2020-11-09]:
+-------------------------------
+
+
 Ver 1.0.42 [2020-01-21]:
 -------------------------------
   - Added new course record to the tk-unk lib for ver 3.2
