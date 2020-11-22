@@ -1,5 +1,13 @@
 #CHANGELOG#
 
+Ver 1.2.10 [2020-11-23]:
+-------------------------------
+  - Tagging and releasing branch `1.2` with version `1.2.6`.
+  - Tagging and releasing branch `1.2` with version `1.2.4`.
+  - Tagging and releasing branch `1.2` with version `1.2.2`.
+  - Tagging and releasing branch `1.2` with version `1.2.0`.
+
+
 Ver 1.2.6 [2020-11-09]:
 -------------------------------
 
