@@ -27,5 +27,8 @@ body.no-side-nav {
   }
 }
 
-
+/* Fix for oversize form input elements with select2 plugin */
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  line-height: 1 !important;
+}
 
