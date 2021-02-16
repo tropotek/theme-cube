@@ -2,6 +2,7 @@
 
 // Form
 .tk-form {
+  //@include make-container();
 
   .nav-tabs {
     > li.nav-item.has-error {
@@ -70,10 +71,11 @@
   }
 
   .form-row {
+    //@include make-row();
 
     &.tk-form-events {
-      margin-left: 0;
-      margin-right: 0;
+      //margin-left: 0;
+      //margin-right: 0;
     }
   }
 
