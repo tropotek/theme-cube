@@ -1,6 +1,6 @@
 {
-    "name": "ttek/theme-cube",
-    "type": "tek-theme",
+    "name": "uom/theme-cube",
+    "type": "uom-theme",
     "description": "Base cube theme lib for shared styles",
     "keywords":  [
         "tk",
@@ -11,14 +11,9 @@
     "authors":  [
          {
             "name": "Michael Mifsud",
-            "email": "info@tropotek.com.au",
             "homepage": "http://www.tropotek.com/"
         }
     ],
-    "autoload":  {
-    },
-    "require":  {
-    },
     "extra":  {
         "branch-alias":  {
             "dev-master": "1.2.x-dev"
