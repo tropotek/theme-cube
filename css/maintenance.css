@@ -1,5 +1,3 @@
-//* !Maintenance */
-//* ----------------------------------------------- */
 
 .maintenance-bg {
   position: fixed;
@@ -28,7 +26,6 @@
 
 @media (min-width: 419px) {
   .maintenance {
-    //width: 500px;
     height: 440px;
     padding: 0;
     top: 50%;
@@ -45,13 +42,15 @@
 
 .maintenance-social-icons {
   margin-top: 18px;
-  .social-icon {
-    width: 36px;
-    height: 36px;
-    color: #666;
-    font-size: 20px;
-    line-height: 36px;
-  }
+
+}
+
+.maintenance-social-icons .social-icon {
+  width: 36px;
+  height: 36px;
+  color: #666;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .maintenance-icon {
