@@ -1,5 +1,10 @@
 #CHANGELOG#
 
+Ver 1.4.2 [2022-08-05]:
+-------------------------------
+  - Tagging and releasing branch `1.2` with version `1.2.22`.
+
+
 Ver 1.4.0 [2022-03-03]:
 -------------------------------
   - Merge branch '1.2' of ssh://github.com/fvas-elearning/theme-cube into 1.2
