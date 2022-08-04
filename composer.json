@@ -1,27 +1,22 @@
 {
     "name": "ttek/theme-cube",
-    "type": "tek-theme",
+    "type": "ttek-theme",
     "description": "Base cube theme lib for shared styles",
     "keywords":  [
         "tk",
         "tropotek"
     ],
-    "time": "2018-09-11",
+    "time": "2022-03-03",
     "license": "MIT",
     "authors":  [
          {
             "name": "Michael Mifsud",
-            "email": "info@tropotek.com.au",
             "homepage": "http://www.tropotek.com/"
         }
     ],
-    "autoload":  {
-    },
-    "require":  {
-    },
     "extra":  {
         "branch-alias":  {
-            "dev-master": "1.2.x-dev"
+            "dev-master": "1.4.x-dev"
         }
     }
 }
